@@ -36,7 +36,6 @@ const MyTabs = () => {
         tabBarInactiveTintColor: "#cdcdcd",
         tabBarLabelStyle: {
           fontSize: 14,
-          // fontWeight: "bold",
         },
       })}
     >
@@ -66,8 +65,6 @@ export default function NavigationScreen() {
           headerShown: false,
         }}
       >
-        {/* <Stack.Screen name="View" component={ViewScreen} />
-        <Stack.Screen name="AddNew" component={AddNewScreen} /> */}
         <Stack.Screen name="MyTab" component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
