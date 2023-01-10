@@ -2,7 +2,7 @@
 ## Steps:
 git clone https://github.com/rayasrahiman/my_category_app.git
 
-# NOTE:
+## NOTE:
 
 "The app might not be Responsive."
 
