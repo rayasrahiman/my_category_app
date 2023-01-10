@@ -18,13 +18,11 @@ export default function AddNewScreen() {
   const [textInp, setTextInp] = useState([{ name: "" }]);
 
   const postCategory = async () => {
-    console.log(cName, "Cat Name");
     if (cSubName) {
       var arr = textInp.filter((val) =>
         val.name === "" ? (val.name = cSubName) : val
       );
     }
-    console.log(arr, "array");
     try {
       let body = new FormData();
       body.append("category_name", cName);
@@ -55,7 +53,6 @@ export default function AddNewScreen() {
   };
 
   const showImagePicker = async () => {
-    // Ask the user for the permission to access the media library
     const permissionResult =
       await ImagePicker.requestMediaLibraryPermissionsAsync();
 
@@ -66,7 +63,6 @@ export default function AddNewScreen() {
 
     const result = await ImagePicker.launchImageLibraryAsync();
 
-    // Explore the result
     console.log(result);
 
     if (!result.cancelled) {

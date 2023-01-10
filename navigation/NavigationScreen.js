@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Feather, AntDesign } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import ViewScreen from "../screens/ViewScreen";
 import AddNewScreen from "../screens/AddNewScreen";
